@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 1</title>
+</head>
+<body>
+    <form method="GET" action="http://arquivo.devmedia.com.br/projeto/requisicao.php">
+        <fieldset>
+            <legend>Conta</legend>
+                <div>
+                    <label>Email:</label>
+                    <input type="email" name="e-mail" required />
+                </div>
+                <div>
+                    <label>Senha:</label>
+                    <input type="password" name="senha" required />
+                </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+                <div>
+                    <label>Nome:</label>
+                    <input type="text" placeholder="Ex: Diego" name="nome" required />
+                </div>
+
+                <div>
+                    <label>Telefone:</label>
+                    <input type="tel" placeholder="(19) 99988-5522" name="telefone" required />
+                </div>
+
+                <div>
+                    <label>Sexo:</label>
+                    <input type="radio" value="masculino" name="sexo" />
+                        <label>masculino</label>
+                    <input type="radio" value="feminino" name="sexo" />
+                        <label>Feminino</label>
+                </div>
+
+                <div>
+                    <label>Foto de perfil:</label>
+                    <input type="file" accept="image/*" name="foto" />
+                </div>
+
+                <div>
+                    <label>Data de Nascimento:</label>
+                    <input type="date" name="data_nascimento" required />
+                </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+                <div>
+                    <label>Rua:</label>
+                    <input type="text" name="endereco" required />
+                </div>
+
+                <div>
+                    <label>Número:</label>
+                    <input type="number" min="1" max="9999" name="numero" required />
+                </div>
+
+                <div>
+                    <label>Complemento:</label>
+                    <input type="text" name="complemento" />
+                </div>
+
+                <div>
+                    <label>Cidade:</label>
+                    <input type="text" name="cidade" required />
+                </div>
+
+                <div>
+                    <label>Estado:</label>
+                    <select name="estado" required>
+                        <option value=" " checked> </option>
+                        <option value="sp">SP</option>
+                        <option value="rj">RJ</option>
+                        <option value="mg">MG</option>
+                        <option value="es">ES</option>
+                    </select>
+                </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contato</legend>
+            <div>
+                <label>Outras informações:</label>
+                <textarea maxlength="150" placeholder="Explique em pocas palavras, algo que você precisa." name="fale_conosco"></textarea>
+            </div>
+        
+            <div>
+                <label>Deseja receber ofertas por e-mail?</label>
+                <input type="checkbox" name="anuncio" checked />
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Enviar" />
+    </form>
+
+    <p><q>texto teste</q>-<cite>https://google.com</cite></p>
+</body>
+</html>
